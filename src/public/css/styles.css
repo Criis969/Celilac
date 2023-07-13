@@ -1,0 +1,43 @@
+body {
+    background-image: url("../img/fondo.webp");
+}
+
+nav{
+   background-color: orange;
+   font-size: x-large;
+   font-style: italic;
+}
+
+.nav-item{
+    padding-right: 20px;
+}
+
+.nav-link{
+    color: whitesmoke;
+}
+
+#presentation{
+    color: white;
+    background-color: orange;
+    text-align: justify;
+}
+
+.card-image{
+    border-radius: 50%;
+    align-self: center;
+    padding-top: 4px;
+}
+
+.title{
+    text-align: center;
+}
+
+hr{
+    border-top: 8px solid;
+    border-radius: 5px;
+    color: darkorange;
+}
+
+.presentation{
+    margin: 0;
+}

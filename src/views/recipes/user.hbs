@@ -1,0 +1,31 @@
+<div class="container p-4">
+    {{#if recipes}}
+    <div class="row">
+        {{#each recipes}}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{image_link}}" alt="No imagen" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">{{recipe_name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{timeago created_at}}</h6>
+                    <p class="card-text">Tiempo: {{duration}}</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-grid">
+                                <a href="/recipes/user/{{user_id}}/edit/{{id}}" class="btn btn-warning">Editar receta</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-grid">
+                                <a href="/recipes/delete/{{id}}" class="btn btn-danger">Eliminar receta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+</div>

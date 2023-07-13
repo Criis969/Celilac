@@ -1,0 +1,23 @@
+{{#each recipe}}
+<div class="container p-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-image" src="{{image_link}}" height="150" width="150">
+                <div class="card-body">
+                    <div class="title">
+                        <h3 class="card-title" id="recipe_title">{{recipe_name}}</h3>
+                        <h5 class="card-subtitle mb-2 text-muted" id="time">Tiempo: {{duration}}</h5>
+                    </div>
+                    <hr class="rounded">
+                    <h4>Ingredientes</h4>
+                    <p>{{recipe_ingredients}}</p>
+                    <hr class="rounded">
+                    <h4>Preparación</h4>
+                    <p>{{recipe_description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

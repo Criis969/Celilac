@@ -1,0 +1,27 @@
+<div class="container p-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-image" src="/img/avatar2.jpg" height="150" width="150">
+                <div class="card-body">
+                    <div class="title">
+                        <h3 class="card-title" id="recipe_title">{{user.username}}</h3>
+                    </div>
+                    <hr class="rounded">
+                    <h4>Nombre y Apellidos</h4>
+                    <h5>{{user.firstname}} {{user.surname}}</h5>
+                    <hr class="rounded">
+                    <h4>Correo electronico</h4>
+                    <h5>{{user.email}}</h5>
+                    <hr class="rounded">
+                    <div class="d-grid p-2">
+                        <a href="/recipes/add" class="btn btn-success">Añadir receta</a>
+                    </div>
+                    <div class="d-grid p-2">
+                        <a href="/recipes/user/{{user.id}}" class="btn btn-warning">Editar receta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
